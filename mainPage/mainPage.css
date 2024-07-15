@@ -1,0 +1,56 @@
+#top-left {
+    color: white;
+}
+
+
+a {
+    font-size: x-large;
+    color: white;
+}
+
+img {
+    background-color: white;
+    width: 300px;
+}
+
+h1 {
+    text-align: center;
+    font-size: larger;
+    color: white;
+    font-style: oblique;
+}
+
+p {
+    color: white;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    color: white;
+}
+
+.header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+body {
+    background-color: rgb(40, 40, 40);
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header nav a {
+    color: white;
+    font-size: 18px;
+}
+
+.header nav {
+    display: flex;
+    gap: 40px;
+}
