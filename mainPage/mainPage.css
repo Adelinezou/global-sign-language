@@ -8,11 +8,6 @@ a {
     color: white;
 }
 
-img {
-    background-color: white;
-    width: 300px;
-}
-
 h1 {
     text-align: center;
     font-size: larger;
@@ -53,4 +48,37 @@ body {
 .header nav {
     display: flex;
     gap: 40px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "pt pt pd pd pd"
+        "mi mi mi mi mi"
+        "mp mp md md md"
+
+}
+
+#mapd {
+    grid-area: md;
+}
+
+#map {
+    width: 500px;
+    grid-area: mp;
+}
+
+#photo {
+    background-color: white;
+    width: 300px;
+    grid-area: pt;
+}
+
+#photod {
+    grid-area: pd;
+}
+
+#mid {
+    grid-area: mi;
 }
