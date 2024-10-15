@@ -1,84 +1,134 @@
-#top-left {
-    color: white;
-}
+/* mainPage.css */
 
+/* Global Styles */
+body {
+    background-color: #f4f4f4;
+    /* Light background */
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    /* Dark text */
+}
 
 a {
-    font-size: x-large;
-    color: white;
+    color: #4a4e69;
+    /* Link color */
+    text-decoration: none;
+    /* Remove underline */
 }
 
-h1 {
-    text-align: center;
-    font-size: larger;
-    color: white;
-    font-style: oblique;
+a:hover {
+    text-decoration: underline;
+    /* Underline on hover */
 }
 
-p {
-    color: white;
-}
-
+/* Header Styles */
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
+    background-color: #22223b;
+    /* Dark header */
     color: white;
+    /* White text */
 }
 
 .header .logo {
-    font-size: 24px;
+    font-size: 28px;
     font-weight: bold;
-}
-
-body {
-    background-color: rgb(40, 40, 40);
-    color: white;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-.header nav a {
-    color: white;
-    font-size: 18px;
 }
 
 .header nav {
     display: flex;
-    gap: 40px;
+    gap: 20px;
+    /* Space between nav items */
 }
 
+.header nav a {
+    color: #f8f8f2;
+    /* Lighter text for nav links */
+    font-size: 18px;
+    /* Font size for readability */
+}
+
+/* Link Heading Style (h1) */
+h1 a {
+    color: #4a4e69;
+    /* Darker color for the link */
+    text-align: center;
+    font-size: 2.2em;
+    /* Larger font for emphasis */
+    font-weight: bold;
+    padding: 15px 30px;
+    border: 2px solid #4a4e69;
+    /* Border to look like a button */
+    border-radius: 8px;
+    display: inline-block;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+    /* Smooth transitions */
+}
+
+h1 a:hover {
+    background-color: #4a4e69;
+    /* Fill with background color on hover */
+    color: white;
+    /* Change text color */
+    transform: scale(1.05);
+    /* Slight zoom effect on hover */
+}
+
+/* Main Content Styles */
 .container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-areas:
-        "pt pt pd pd pd"
-        "mi mi mi mi mi"
-        "mp mp md md md"
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Center items */
+    padding: 20px;
 }
 
-#mapd {
-    grid-area: md;
-}
-
+#photo,
 #map {
-    width: 500px;
-    grid-area: mp;
+    width: 80%;
+    /* Responsive images */
+    max-width: 600px;
+    /* Max width */
+    border-radius: 8px;
+    /* Rounded corners */
 }
 
-#photo {
-    background-color: white;
-    width: 300px;
-    grid-area: pt;
+#photod,
+#mapd {
+    font-size: 1.1em;
+    /* Larger text */
+    line-height: 1.6;
+    /* Line spacing */
+    text-align: justify;
+    /* Justify text */
+    margin: 15px 0;
+    /* Margin for spacing */
+    max-width: 800px;
+    /* Limit width for readability */
 }
 
-#photod {
-    grid-area: pd;
-}
+/* Media Queries for Responsive Design */
+@media (max-width: 600px) {
+    h1 a {
+        font-size: 1.8em;
+        /* Smaller size for smaller screens */
+        padding: 10px 20px;
+    }
 
-#mid {
-    grid-area: mi;
+    #photo,
+    #map {
+        width: 90%;
+        /* Increase size on mobile */
+    }
+
+    #photod,
+    #mapd {
+        font-size: 1em;
+        /* Reduce text size on smaller screens */
+    }
 }
