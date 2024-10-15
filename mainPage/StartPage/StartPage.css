@@ -1,51 +1,13 @@
-img {
-    width: 300px;
-
-}
+/* StartPage.css */
 
 body {
-    background-color: rgb(40, 40, 40);
-    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    /* Light background */
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-}
-
-.name {
-    background-color: black;
-    padding: 10px;
-    color: white
-}
-
-.TypeOfSignLanguage {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    text-align: center;
-    padding: 10px;
-    background-color: lightgray;
-    max-width: 600px;
-    border-radius: 5px;
-    display: block;
-}
-
-.TypeOfSignLanguage:hover {
-    background-color: rgb(142, 168, 255);
-}
-
-#Type {
-    padding: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-a {
-    color: white;
-
-}
-
-input {
-    float: top right;
+    color: #333;
+    /* Dark text */
 }
 
 .header {
@@ -53,45 +15,82 @@ input {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
+    background-color: #22223b;
+    /* Dark header */
     color: white;
+    /* White text */
 }
 
 .header .logo {
-    font-size: 24px;
+    font-size: 28px;
     font-weight: bold;
 }
 
 .header nav {
     display: flex;
     gap: 20px;
+    /* Space between nav items */
 }
 
 .header nav a {
-    color: white;
+    color: #f8f8f2;
+    /* Lighter text for nav links */
     font-size: 18px;
+    /* Font size for readability */
 }
 
-.header .search-container {
+.TypeOfSignLanguage {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    gap: 10px;
+    /* Center items */
+    padding: 20px;
+    background-color: #ffffff;
+    /* White background for each item */
+    border: 1px solid #ddd;
+    /* Border */
+    border-radius: 8px;
+    /* Rounded corners */
+    max-width: 300px;
+    /* Max width for items */
+    margin: 10px;
+    /* Margin for spacing */
+    transition: background-color 0.3s;
+    /* Transition for hover effect */
 }
 
-.header .search-container input[type="text"] {
-    padding: 10px;
-    border: none;
-    border-radius: 4px;
+.TypeOfSignLanguage:hover {
+    background-color: #e8e8e8;
+    /* Hover effect */
 }
 
-.header .search-container button {
-    padding: 10px;
-    border: none;
-    border-radius: 4px;
-    background-color: #555;
+#Type {
+    display: flex;
+    flex-wrap: wrap;
+    /* Wrap items */
+    justify-content: center;
+    /* Center items */
+    padding: 20px;
+    gap: 20px;
+    /* Space between items */
+}
+
+img {
+    width: 100%;
+    /* Responsive images */
+    border-radius: 8px;
+    /* Rounded corners */
+}
+
+.name {
+    background-color: #4a4e69;
+    /* Dark background for name */
     color: white;
-    cursor: pointer;
-}
-
-.header .search-container button:hover {
-    background-color: #777;
+    /* White text */
+    padding: 10px;
+    width: 100%;
+    /* Full width */
+    text-align: center;
+    /* Center text */
 }
